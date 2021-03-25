@@ -64,7 +64,7 @@ public class LoginStepDefinitions {
        
         config.addBrowser(800, 600, BrowserType.CHROME);
         // config.addBrowser(700, 500, BrowserType.FIREFOX);
-        config.addBrowser(1600, 1200, BrowserType.IE_11);
+        config.addBrowser(800, 600, BrowserType.IE_11);
         // config.addBrowser(1024, 768, BrowserType.EDGE_CHROMIUM);
         // config.addBrowser(800, 600, BrowserType.SAFARI);
         // // Add mobile emulation devices in Portrait mode
@@ -121,10 +121,10 @@ public class LoginStepDefinitions {
     }
     
     
-    @Then("she is able to see the login activated alert")
+    @Then("she is able to see the sunflower farm")
     public void sheIsAbleToSeeTheLoginActivatedAlert() {
     if (System.getenv("APPLITOOLS_API_KEY") != null)
-            eyes.check(Target.window().fully().withName("Login activated alert"));
+            eyes.check(Target.window().fully().withName("Dashboard"));
  
     }
 }
