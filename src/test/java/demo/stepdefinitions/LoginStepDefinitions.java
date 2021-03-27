@@ -122,7 +122,7 @@ public class LoginStepDefinitions {
     
     
     @Then("she is able to see the sunflower farm")
-    public void sheIsAbleToSeeTheLoginActivatedAlert() {
+    public void sheIsAbleToSeeTheSunflowerFarm() {
     if (System.getenv("APPLITOOLS_API_KEY") != null)
             eyes.check(Target.window().fully().withName("Dashboard"));
  
