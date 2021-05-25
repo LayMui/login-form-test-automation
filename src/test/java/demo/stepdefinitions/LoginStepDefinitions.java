@@ -125,6 +125,8 @@ public class LoginStepDefinitions {
     public void sheIsAbleToSeeTheSunflowerFarm() {
     if (System.getenv("APPLITOOLS_API_KEY") != null)
             eyes.check(Target.window().fully().withName("Dashboard"));
+
+// Example: theActorInTheSpotlight().attemptsTo(Check.whether(displayText(DashboardPage.TEXT_HELLO), Matchers.containsString("Hello")))
  
     }
 }
